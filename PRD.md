@@ -163,12 +163,13 @@ vet-clinic-app/
 - [ ] Create GitHub repo and push (PowerShell 5: run `git remote add origin <url>` then `git push -u origin main` on separate lines)
 
 ### Vercel Deployment
-- [ ] Go to [vercel.com](https://vercel.com) → New Project → Import from GitHub
-- [ ] Set **Root Directory** to `vet-clinic-app` (if deploying the subfolder)
-  - OR move contents to repo root for simpler setup
-- [ ] Add environment variables in Vercel dashboard
-- [ ] Assign custom domain (optional)
-- [ ] Verify form works on production URL
+- [ ] Go to [vercel.com](https://vercel.com) → **Add New…** → **Project** → import **kirpals/pawcare-vet** (or your repo).
+- [ ] **Root directory:** If the GitHub repo root is *this app folder* (`package.json` at root), leave blank. If the repo contains a parent folder, set **Root Directory** to `vet-clinic-app`.
+- [ ] **Environment Variables** (Production — and Preview if you test there):  
+  `RESEND_API_KEY` = (from Resend) · `CLINIC_EMAIL` = inbox for appointment emails  
+  Optional: add `RESEND_FROM` later if you move the sender to an env var.
+- [ ] Deploy. After first deploy, test the appointment form on the `.vercel.app` URL.
+- [ ] **CLI (optional):** from `vet-clinic-app`, run `vercel login`, then `vercel` (preview) or `npm run vercel:prod`. Repo already includes `vercel.json` (Next.js + `bom1` region for India-adjacent functions).
 
 ### Resend Setup
 - [ ] Create account at [resend.com](https://resend.com)
