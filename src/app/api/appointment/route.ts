@@ -1,15 +1,13 @@
-/**
- * Legacy path — same handler as /api/appointment (some proxies block paths containing "contact").
- */
 import { NextRequest, NextResponse } from "next/server";
 import { handleAppointmentPost } from "@/lib/appointment-mail";
 
 export const runtime = "nodejs";
 
+/** Quick check: open /api/appointment in the browser — should show JSON ok:true */
 export async function GET() {
   return NextResponse.json({
     ok: true,
-    migrated: "Prefer POST /api/appointment for the booking form.",
+    hint: "POST JSON { name, phone, email?, message? } to submit the appointment form.",
   });
 }
 
