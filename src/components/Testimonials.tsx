@@ -1,40 +1,40 @@
 
 const testimonials = [
   {
-    name: "प्रिया शर्मा",
-    location: "वैशाली, गाज़ियाबाद",
-    initials: "प्र",
+    name: "Priya Sharma",
+    location: "Vaishali, Ghaziabad",
+    initials: "PS",
     avatarColor: "bg-rose-400",
     rating: 5,
-    text: "PawCare हमारे कुत्ते Bruno के लिए एक वरदान रहा है। डॉक्टर बहुत धैर्यवान और जानकार हैं। उन्होंने सब कुछ स्पष्ट रूप से समझाया और सुनिश्चित किया कि Bruno पूरे समय आरामदायक रहे। अत्यधिक अनुशंसित!",
-    pet: "कुत्ते के मालिक",
+    text: "PawCare has been an absolute blessing for our dog Bruno. The doctors are so patient and knowledgeable. They explained everything clearly and made sure Bruno was comfortable throughout. Highly recommend!",
+    pet: "Dog owner",
   },
   {
-    name: "राहुल मेहता",
-    location: "सेक्टर-3, वैशाली",
-    initials: "रा",
+    name: "Rahul Mehta",
+    location: "Sector-3, Vaishali",
+    initials: "RM",
     avatarColor: "bg-blue-500",
     rating: 5,
-    text: "जब हमारी बिल्ली बीमार पड़ी तो हम देर रात यहां दौड़े आए। आपातकालीन प्रतिक्रिया अविश्वसनीय थी — कर्मचारी गर्मजोशी वाले, कुशल और सच में परवाह करने वाले थे। हमारी Mittens इस अद्भुत टीम की बदौलत फिर से चंचल हो गई है!",
-    pet: "बिल्ली के मालिक",
+    text: "We rushed here late at night when our cat fell ill. The emergency response was incredible — the staff was warm, efficient, and truly cared. Our Mittens is back to her playful self thanks to this wonderful team!",
+    pet: "Cat owner",
   },
   {
-    name: "अंजलि गुप्ता",
-    location: "इंदिरापुरम, गाज़ियाबाद",
-    initials: "अं",
+    name: "Anjali Gupta",
+    location: "Indirapuram, Ghaziabad",
+    initials: "AG",
     avatarColor: "bg-violet-500",
     rating: 5,
-    text: "साफ सुविधाएं, पारदर्शी मूल्य निर्धारण, और उत्कृष्ट देखभाल। डॉ. सिंह ने मेरे खरगोश के आहार और स्वास्थ्य के बारे में सभी सवालों के जवाब देने में समय लिया। यह क्लिनिक वास्तव में आपके पालतू जानवरों के साथ परिवार जैसा व्यवहार करती है।",
-    pet: "खरगोश के मालिक",
+    text: "Clean facilities, transparent pricing, and excellent care. Dr. Singh took time to answer all my questions about my rabbit's diet and health. This clinic genuinely treats your pets like family.",
+    pet: "Rabbit owner",
   },
   {
-    name: "विक्रम नायर",
-    location: "क्रॉसिंग्स रिपब्लिक",
-    initials: "वि",
+    name: "Vikram Nair",
+    location: "Crossings Republik",
+    initials: "VN",
     avatarColor: "bg-amber-500",
     rating: 5,
-    text: "3 साल से दोनों कुत्तों को यहां ला रहा हूं। टीकाकरण की याद दिलाना, फॉलो-अप कॉल और व्यक्तिगत देखभाल PawCare को हर उस क्लिनिक से अलग करती है जो मैंने आजमाई है। हर रुपये की कीमत है!",
-    pet: "कुत्ते के मालिक",
+    text: "Been bringing both my dogs here for 3 years. The vaccination reminders, follow-up calls, and personalized care set PawCare apart from every clinic I've tried. Worth every rupee!",
+    pet: "Dog owner",
   },
 ];
 
@@ -62,13 +62,13 @@ export default function Testimonials() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block bg-green-100 text-green-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wider">
-            समीक्षाएं
+            Testimonials
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-green-900 mb-4">
-            पालतू माता-पिता हमारे बारे में क्या कहते हैं
+            What Pet Parents Say About Us
           </h2>
           <p className="text-slate-500 max-w-xl mx-auto text-lg">
-            हजारों परिवार अपने पालतू जानवर के स्वास्थ्य के लिए PawCare पर भरोसा करते हैं। यहां वे क्या कहते हैं।
+            Thousands of families trust PawCare for their pet&apos;s health. Here&apos;s what they have to say.
           </p>
           <div className="flex items-center justify-center gap-3 mt-6">
             <div className="flex">
@@ -78,7 +78,7 @@ export default function Testimonials() {
                 </svg>
               ))}
             </div>
-            <span className="text-slate-600 font-semibold">500+ समीक्षाओं का 4.9 औसत</span>
+            <span className="text-slate-600 font-semibold">4.9 average from 500+ reviews</span>
           </div>
         </div>
 
