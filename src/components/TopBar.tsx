@@ -23,7 +23,7 @@ export default function TopBar() {
 
         {/* Social Media */}
         <div className="flex items-center gap-4">
-          <span className="text-green-300 hidden sm:inline">Follow us:</span>
+          <span className="text-green-300 hidden sm:inline">हमें फॉलो करें:</span>
           <a href="#" aria-label="Facebook" className="hover:text-green-300 transition-colors">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />

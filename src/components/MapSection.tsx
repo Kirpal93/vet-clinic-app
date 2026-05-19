@@ -5,11 +5,11 @@ export default function MapSection() {
         {/* Section Header */}
         <div className="text-center mb-12">
           <span className="inline-block bg-green-100 text-green-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wider">
-            Find Us
+            हमें खोजें
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-green-900 mb-4">Our Location</h2>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-green-900 mb-4">हमारा स्थान</h2>
           <p className="text-slate-500 max-w-xl mx-auto text-lg">
-            Conveniently located in Vaishali Sector-1, easily accessible from all parts of Ghaziabad and Noida.
+            वैशाली सेक्टर-1 में सुविधाजनक स्थान पर, गाज़ियाबाद और नोएडा के सभी हिस्सों से आसानी से पहुंचने योग्य।
           </p>
         </div>
 
@@ -25,7 +25,7 @@ export default function MapSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-bold text-green-900 mb-1">Address</h3>
+                  <h3 className="font-bold text-green-900 mb-1">पता</h3>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     Vaishali Sector-1<br />
                     Ghaziabad, UP 201010<br />
@@ -43,19 +43,19 @@ export default function MapSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-bold text-green-900 mb-1">Opening Hours</h3>
+                  <h3 className="font-bold text-green-900 mb-1">खुलने का समय</h3>
                   <div className="text-sm text-slate-600 space-y-1">
                     <div className="flex justify-between gap-8">
-                      <span>Mon – Fri</span><span className="font-medium">9:00 AM – 8:00 PM</span>
+                      <span>सोम – शुक्र</span><span className="font-medium">सुबह 9:00 – शाम 8:00</span>
                     </div>
                     <div className="flex justify-between gap-8">
-                      <span>Saturday</span><span className="font-medium">9:00 AM – 6:00 PM</span>
+                      <span>शनिवार</span><span className="font-medium">सुबह 9:00 – शाम 6:00</span>
                     </div>
                     <div className="flex justify-between gap-8">
-                      <span>Sunday</span><span className="font-medium">10:00 AM – 2:00 PM</span>
+                      <span>रविवार</span><span className="font-medium">सुबह 10:00 – दोपहर 2:00</span>
                     </div>
                     <div className="mt-2 pt-2 border-t border-green-100">
-                      <span className="text-green-700 font-semibold">Emergency: 24/7</span>
+                      <span className="text-green-700 font-semibold">आपातकाल: 24/7</span>
                     </div>
                   </div>
                 </div>
@@ -70,7 +70,7 @@ export default function MapSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-bold text-green-900 mb-1">Contact</h3>
+                  <h3 className="font-bold text-green-900 mb-1">संपर्क</h3>
                   <a href="tel:9958436981" className="text-green-700 font-semibold text-sm hover:underline block">
                     +91 99584 36981
                   </a>
@@ -85,7 +85,7 @@ export default function MapSection() {
           {/* Map Embed */}
           <div className="lg:col-span-2 rounded-2xl overflow-hidden shadow-lg border border-slate-100 h-[450px]">
             <iframe
-              title="PawCare Vet Clinic Location"
+              title="PawCare वेट क्लिनिक स्थान"
               src="https://www.openstreetmap.org/export/embed.html?bbox=77.3200%2C28.6400%2C77.3600%2C28.6700&layer=mapnik&marker=28.6450%2C77.3350"
               width="100%"
               height="100%"
@@ -107,7 +107,7 @@ export default function MapSection() {
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
             </svg>
-            Get Directions on Google Maps
+            Google Maps पर दिशा-निर्देश पाएं
           </a>
         </div>
       </div>

@@ -4,12 +4,12 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "About", href: "#about" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Location", href: "#location" },
-  { label: "Contact", href: "#contact" },
+  { label: "होम", href: "#home" },
+  { label: "सेवाएं", href: "#services" },
+  { label: "हमारे बारे में", href: "#about" },
+  { label: "समीक्षाएं", href: "#testimonials" },
+  { label: "स्थान", href: "#location" },
+  { label: "संपर्क", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -71,14 +71,14 @@ export default function Navbar() {
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
           </svg>
-          Book Appointment
+          अपॉइंटमेंट बुक करें
         </button>
 
         {/* Mobile Hamburger */}
         <button
           className="md:hidden p-2 rounded-md text-slate-700 hover:text-green-700 hover:bg-green-50"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
+          aria-label="मेनू खोलें/बंद करें"
         >
           {menuOpen ? (
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -111,7 +111,7 @@ export default function Navbar() {
                 onClick={() => handleNavClick("#contact")}
                 className="w-full bg-green-700 hover:bg-green-800 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors cursor-pointer"
               >
-                Book Appointment
+                अपॉइंटमेंट बुक करें
               </button>
             </li>
           </ul>

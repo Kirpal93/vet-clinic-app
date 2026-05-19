@@ -12,6 +12,6 @@ html {
 }
 
 body {
-  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-family: var(--font-devanagari), 'Inter', 'Segoe UI', 'Noto Sans Devanagari', sans-serif;
   color: #1e293b;
 }
