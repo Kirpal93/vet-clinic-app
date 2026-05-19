@@ -5,7 +5,7 @@ export default function StickyBottomBar() {
     <div className="fixed bottom-0 left-0 right-0 z-50 bg-green-700 shadow-[0_-4px_20px_rgba(0,0,0,0.15)]">
       <div className="max-w-7xl mx-auto px-4 py-3 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
         <p className="text-white font-medium text-sm sm:text-base">
-          📅 अपने पालतू जानवर की देखभाल के लिए तैयार हैं? अपॉइंटमेंट लेने के लिए कॉल करें!
+          📅 Ready to care for your pet? Call to make an appointment!
         </p>
         <a
           href="tel:9958436981"

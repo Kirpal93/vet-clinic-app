@@ -72,7 +72,7 @@ export default function Hero() {
       <div className="absolute inset-0 opacity-20">
         <Image
           src="/images/hero-1.jpg"
-          alt="पशु चिकित्सा देखभाल पृष्ठभूमि"
+          alt="Veterinary care background"
           fill
           className="object-cover"
           priority
@@ -88,33 +88,33 @@ export default function Hero() {
         <div className="text-white">
           <div className="inline-flex items-center gap-2 bg-green-500/20 border border-green-400/30 rounded-full px-4 py-1.5 mb-6">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            <span className="text-green-100 text-sm font-medium">नए मरीजों को स्वीकार किया जा रहा है</span>
+            <span className="text-green-100 text-sm font-medium">Now Accepting New Patients</span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-            आपके प्रिय पालतू जानवरों की देखभाल <span className="text-emerald-300">परिवार</span> की तरह
+            Caring for Your <span className="text-emerald-300">Beloved</span> Pets Like Family
           </h1>
           <p className="text-green-100 text-lg leading-relaxed mb-8 max-w-lg">
-            वैशाली, गाज़ियाबाद के केंद्र में विशेषज्ञ, दयालु पशु चिकित्सा देखभाल। 
-            क्षेत्र भर में हजारों पालतू परिवारों द्वारा विश्वसनीय।
+            Expert, compassionate veterinary care in the heart of Vaishali, Ghaziabad. 
+            Trusted by thousands of pet families across the region.
           </p>
           <div className="flex flex-wrap gap-6 text-sm text-green-200">
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              अनुभवी पशु चिकित्सक
+              Experienced Veterinarians
             </div>
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              आधुनिक उपकरण
+              Modern Equipment
             </div>
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              आपातकालीन सेवाएं
+              Emergency Services
             </div>
           </div>
         </div>
@@ -122,8 +122,8 @@ export default function Hero() {
         {/* Right: Appointment Form */}
         <div id="contact" className="bg-white rounded-2xl shadow-2xl p-8 scroll-mt-20">
           <div className="mb-6">
-            <h2 className="text-2xl font-bold text-green-900">अपॉइंटमेंट बुक करें</h2>
-            <p className="text-slate-500 text-sm mt-1">फॉर्म भरें और हम जल्द आपसे संपर्क करेंगे।</p>
+            <h2 className="text-2xl font-bold text-green-900">Book an Appointment</h2>
+            <p className="text-slate-500 text-sm mt-1">Fill the form and we&apos;ll get back to you shortly.</p>
           </div>
 
           {status === "success" ? (
@@ -133,8 +133,8 @@ export default function Hero() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-slate-800">संदेश भेजा गया!</h3>
-              <p className="text-slate-500 text-sm">हम 24 घंटे के भीतर आपकी अपॉइंटमेंट की पुष्टि के लिए संपर्क करेंगे।</p>
+              <h3 className="text-xl font-semibold text-slate-800">Message Sent!</h3>
+              <p className="text-slate-500 text-sm">We&apos;ll contact you within 24 hours to confirm your appointment.</p>
               {devMockSuccess && (
                 <p className="text-amber-800 text-xs max-w-sm bg-amber-50 border border-amber-100 rounded-lg px-3 py-2 text-left">
                   Local dev: email was not sent (this PC cannot reach api.resend.com — often corporate firewall or SSL inspection). Your request was{" "}
@@ -150,14 +150,14 @@ export default function Hero() {
                 }}
                 className="mt-2 text-green-700 underline text-sm hover:text-green-900"
               >
-                एक और संदेश भेजें
+                Send another message
               </button>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
               <div>
                 <label htmlFor="name" className="block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-1.5">
-                  पूरा नाम *
+                  Full Name *
                 </label>
                 <input
                   id="name"
@@ -166,13 +166,13 @@ export default function Hero() {
                   required
                   value={form.name}
                   onChange={handleChange}
-                  placeholder="आपका पूरा नाम"
+                  placeholder="Your full name"
                   className="w-full border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition"
                 />
               </div>
               <div>
                 <label htmlFor="phone" className="block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-1.5">
-                  फोन नंबर *
+                  Phone Number *
                 </label>
                 <input
                   id="phone"
@@ -181,13 +181,13 @@ export default function Hero() {
                   required
                   value={form.phone}
                   onChange={handleChange}
-                  placeholder="आपका फोन नंबर"
+                  placeholder="Your phone number"
                   className="w-full border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition"
                 />
               </div>
               <div>
                 <label htmlFor="email" className="block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-1.5">
-                  ईमेल पता
+                  Email Address
                 </label>
                 <input
                   id="email"
@@ -201,7 +201,7 @@ export default function Hero() {
               </div>
               <div>
                 <label htmlFor="message" className="block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-1.5">
-                  संदेश / विज़िट का कारण
+                  Message / Reason for Visit
                 </label>
                 <textarea
                   id="message"
@@ -209,13 +209,13 @@ export default function Hero() {
                   rows={3}
                   value={form.message}
                   onChange={handleChange}
-                  placeholder="अपने पालतू जानवर की स्थिति या विज़िट का कारण बताएं..."
+                  placeholder="Describe your pet's condition or the reason for your visit..."
                   className="w-full border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition resize-none"
                 />
               </div>
               {status === "error" && (
                 <p className="text-red-600 text-sm rounded-lg bg-red-50 border border-red-100 px-3 py-2">
-                  {errorMessage ?? "कुछ गलत हुआ। कृपया पुनः प्रयास करें या सीधे हमें कॉल करें।"}
+                  {errorMessage ?? "Something went wrong. Please try again or call us directly."}
                 </p>
               )}
               <button
@@ -229,14 +229,14 @@ export default function Hero() {
                       <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
                       <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
                     </svg>
-                    भेजा जा रहा है...
+                    Sending...
                   </>
                 ) : (
                   <>
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                     </svg>
-                    संदेश भेजें
+                    Send Message
                   </>
                 )}
               </button>

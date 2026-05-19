@@ -19,8 +19,8 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-green-300 text-sm leading-relaxed">
-              वैशाली, गाज़ियाबाद में आपके प्रिय पालतू जानवरों के लिए विश्वसनीय पशु चिकित्सा देखभाल। 
-              2010 से जानवरों की देखभाल।
+              Trusted veterinary care for your beloved pets in Vaishali, Ghaziabad. 
+              Caring for animals since 2010.
             </p>
             <div className="flex gap-3 mt-4">
               {["facebook", "instagram", "twitter", "whatsapp"].map((s) => (
@@ -36,22 +36,15 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-bold text-white mb-4">त्वरित लिंक</h3>
+            <h3 className="font-bold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {[
-                { label: "होम", href: "#home" },
-                { label: "सेवाएं", href: "#services" },
-                { label: "हमारे बारे में", href: "#about" },
-                { label: "समीक्षाएं", href: "#testimonials" },
-                { label: "स्थान", href: "#location" },
-                { label: "संपर्क", href: "#contact" },
-              ].map((item) => (
-                <li key={item.label}>
+              {["Home", "Services", "About", "Testimonials", "Location", "Contact"].map((item) => (
+                <li key={item}>
                   <a
-                    href={item.href}
+                    href={`#${item.toLowerCase()}`}
                     className="text-green-300 hover:text-white text-sm transition-colors"
                   >
-                    {item.label}
+                    {item}
                   </a>
                 </li>
               ))}
@@ -60,15 +53,15 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="font-bold text-white mb-4">हमारी सेवाएं</h3>
+            <h3 className="font-bold text-white mb-4">Our Services</h3>
             <ul className="space-y-2">
               {[
-                "सामान्य स्वास्थ्य जांच",
-                "टीकाकरण",
-                "शल्य चिकित्सा और प्रक्रियाएं",
-                "निदान और प्रयोगशाला परीक्षण",
-                "दंत चिकित्सा",
-                "आपातकालीन देखभाल",
+                "General Health Check",
+                "Vaccinations",
+                "Surgery & Procedures",
+                "Diagnostics & Lab Tests",
+                "Dental Care",
+                "Emergency Care",
               ].map((item) => (
                 <li key={item}>
                   <a href="#services" className="text-green-300 hover:text-white text-sm transition-colors">
@@ -81,7 +74,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="font-bold text-white mb-4">संपर्क करें</h3>
+            <h3 className="font-bold text-white mb-4">Contact Us</h3>
             <div className="space-y-3 text-sm text-green-300">
               <div className="flex items-start gap-2">
                 <svg className="w-4 h-4 text-green-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -109,8 +102,8 @@ export default function Footer() {
         </div>
 
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-green-400">
-          <p>© {currentYear} PawCare Vet Clinic. सर्वाधिकार सुरक्षित।</p>
-          <p>पालतू जानवरों और उनके परिवारों के लिए प्यार से डिज़ाइन किया गया।</p>
+          <p>© {currentYear} PawCare Vet Clinic. All rights reserved.</p>
+          <p>Designed with care for pets and their families.</p>
         </div>
       </div>
     </footer>

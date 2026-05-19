@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const stats = [
-  { value: "15+", label: "वर्षों का अनुभव" },
-  { value: "8,000+", label: "खुश मरीज" },
-  { value: "5", label: "विशेषज्ञ पशु चिकित्सक" },
-  { value: "24/7", label: "आपातकालीन सहायता" },
+  { value: "15+", label: "Years of Experience" },
+  { value: "8,000+", label: "Happy Patients" },
+  { value: "5", label: "Expert Veterinarians" },
+  { value: "24/7", label: "Emergency Support" },
 ];
 
 export default function About() {
@@ -17,7 +17,7 @@ export default function About() {
             <div className="relative h-[480px] rounded-3xl overflow-hidden shadow-2xl">
               <Image
                 src="/images/hero-2.jpg"
-                alt="PawCare वेट क्लिनिक टीम"
+                alt="PawCare Vet Clinic team"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -31,10 +31,10 @@ export default function About() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <span className="font-semibold text-slate-700 text-sm">विश्वसनीय क्लिनिक</span>
+                <span className="font-semibold text-slate-700 text-sm">Trusted Clinic</span>
               </div>
               <p className="text-2xl font-extrabold text-green-900">4.9 / 5</p>
-              <p className="text-xs text-slate-500 mt-0.5">500+ समीक्षाओं पर आधारित</p>
+              <p className="text-xs text-slate-500 mt-0.5">Based on 500+ reviews</p>
             </div>
             {/* Decorative element */}
             <div className="absolute -top-6 -left-6 w-28 h-28 bg-green-100 rounded-full -z-10" />
@@ -43,20 +43,20 @@ export default function About() {
           {/* Text Column */}
           <div>
             <span className="inline-block bg-green-100 text-green-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wider">
-              हमारे बारे में
+              About Us
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-green-900 mb-6">
-              आपके पालतू जानवर का स्वास्थ्य हमारी <span className="text-emerald-500">प्राथमिकता</span> है
+              Your Pet&apos;s Health Is Our <span className="text-emerald-500">Priority</span>
             </h2>
             <p className="text-slate-600 leading-relaxed mb-4">
-              PawCare वेट क्लिनिक 15 से अधिक वर्षों से वैशाली और गाज़ियाबाद के परिवारों की सेवा कर रहा है। 
-              हमारी समर्पित पशु चिकित्सकों और सहायक कर्मचारियों की टीम हर मरीज के साथ अपने पालतू जानवर की तरह व्यवहार करती है — 
-              गर्मजोशी, सटीकता और चिकित्सा देखभाल के उच्चतम मानकों के साथ।
+              PawCare Vet Clinic has been serving the families of Vaishali and Ghaziabad for over 15 years. 
+              Our team of dedicated veterinarians and support staff treat every patient like their own pet — 
+              with warmth, precision, and the highest standards of medical care.
             </p>
             <p className="text-slate-600 leading-relaxed mb-8">
-              हम उन्नत नैदानिक तकनीक को दयालु दृष्टिकोण के साथ जोड़ते हैं, यह सुनिश्चित करते हुए कि आपके पालतू जानवर को 
-              एक शांत, स्वागत करने वाले वातावरण में सर्वोत्तम उपचार मिले। पिल्लों और बिल्ली के बच्चों से लेकर वरिष्ठ पालतू जानवरों 
-              तक, हम आपके पशु के जीवन के हर चरण की देखभाल करते हैं।
+              We combine advanced diagnostic technology with a compassionate approach, ensuring your pet 
+              receives the best possible treatment in a calm, welcoming environment. From puppies and kittens 
+              to senior pets, we care for every stage of your animal&apos;s life.
             </p>
 
             {/* Stats Grid */}
@@ -77,8 +77,8 @@ export default function About() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-semibold text-slate-800 text-sm">सोम – शनि</p>
-                  <p className="text-xs text-slate-500">सुबह 9:00 – शाम 8:00</p>
+                  <p className="font-semibold text-slate-800 text-sm">Mon – Sat</p>
+                  <p className="text-xs text-slate-500">9:00 AM – 8:00 PM</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 bg-green-50 rounded-xl p-3 flex-1 min-w-[160px]">
@@ -88,7 +88,7 @@ export default function About() {
                   </svg>
                 </div>
                 <div>
-                  <p className="font-semibold text-slate-800 text-sm">आपातकाल</p>
+                  <p className="font-semibold text-slate-800 text-sm">Emergency</p>
                   <p className="text-xs text-slate-500">+91 99584 36981</p>
                 </div>
               </div>
