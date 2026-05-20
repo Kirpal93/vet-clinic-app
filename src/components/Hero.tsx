@@ -66,7 +66,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-green-950 via-green-900 to-green-800 overflow-hidden"
+      className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-red-950 via-red-900 to-red-800 overflow-hidden"
     >
       {/* Background image */}
       <div className="absolute inset-0 opacity-20">
@@ -80,38 +80,38 @@ export default function Hero() {
       </div>
 
       {/* Decorative blobs */}
-      <div className="absolute top-0 right-0 w-72 h-72 bg-green-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-400/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+      <div className="absolute top-0 right-0 w-72 h-72 bg-red-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-rose-400/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid md:grid-cols-2 gap-12 items-center">
         {/* Left: Text */}
         <div className="text-white">
-          <div className="inline-flex items-center gap-2 bg-green-500/20 border border-green-400/30 rounded-full px-4 py-1.5 mb-6">
-            <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            <span className="text-green-100 text-sm font-medium">Now Accepting New Patients</span>
+          <div className="inline-flex items-center gap-2 bg-red-500/20 border border-red-400/30 rounded-full px-4 py-1.5 mb-6">
+            <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse" />
+            <span className="text-red-100 text-sm font-medium">Now Accepting New Patients</span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-            Caring for Your <span className="text-emerald-300">Beloved</span> Pets Like Family
+            Caring for Your <span className="text-rose-300">Beloved</span> Pets Like Family
           </h1>
-          <p className="text-green-100 text-lg leading-relaxed mb-8 max-w-lg">
+          <p className="text-red-100 text-lg leading-relaxed mb-8 max-w-lg">
             Expert, compassionate veterinary care in the heart of Vaishali, Ghaziabad. 
             Trusted by thousands of pet families across the region.
           </p>
-          <div className="flex flex-wrap gap-6 text-sm text-green-200">
+          <div className="flex flex-wrap gap-6 text-sm text-red-200">
             <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-rose-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               Experienced Veterinarians
             </div>
             <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-rose-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               Modern Equipment
             </div>
             <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-rose-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               Emergency Services
@@ -122,14 +122,14 @@ export default function Hero() {
         {/* Right: Appointment Form */}
         <div id="contact" className="bg-white rounded-2xl shadow-2xl p-8 scroll-mt-20">
           <div className="mb-6">
-            <h2 className="text-2xl font-bold text-green-900">Book an Appointment</h2>
+            <h2 className="text-2xl font-bold text-red-900">Book an Appointment</h2>
             <p className="text-slate-500 text-sm mt-1">Fill the form and we&apos;ll get back to you shortly.</p>
           </div>
 
           {status === "success" ? (
             <div className="flex flex-col items-center justify-center py-10 text-center gap-4">
-              <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center">
-                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 rounded-full bg-red-100 flex items-center justify-center">
+                <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
@@ -148,7 +148,7 @@ export default function Hero() {
                   setErrorMessage(null);
                   setDevMockSuccess(false);
                 }}
-                className="mt-2 text-green-700 underline text-sm hover:text-green-900"
+                className="mt-2 text-red-700 underline text-sm hover:text-red-900"
               >
                 Send another message
               </button>
@@ -167,7 +167,7 @@ export default function Hero() {
                   value={form.name}
                   onChange={handleChange}
                   placeholder="Your full name"
-                  className="w-full border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition"
+                  className="w-full border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
                 />
               </div>
               <div>
@@ -182,7 +182,7 @@ export default function Hero() {
                   value={form.phone}
                   onChange={handleChange}
                   placeholder="Your phone number"
-                  className="w-full border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition"
+                  className="w-full border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
                 />
               </div>
               <div>
@@ -196,7 +196,7 @@ export default function Hero() {
                   value={form.email}
                   onChange={handleChange}
                   placeholder="your@email.com"
-                  className="w-full border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition"
+                  className="w-full border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition"
                 />
               </div>
               <div>
@@ -210,7 +210,7 @@ export default function Hero() {
                   value={form.message}
                   onChange={handleChange}
                   placeholder="Describe your pet's condition or the reason for your visit..."
-                  className="w-full border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition resize-none"
+                  className="w-full border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition resize-none"
                 />
               </div>
               {status === "error" && (
@@ -221,7 +221,7 @@ export default function Hero() {
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="bg-green-700 hover:bg-green-800 disabled:bg-green-400 text-white font-semibold py-3 rounded-lg transition-colors shadow-md hover:shadow-lg flex items-center justify-center gap-2 cursor-pointer"
+                className="bg-red-700 hover:bg-red-800 disabled:bg-red-400 text-white font-semibold py-3 rounded-lg transition-colors shadow-md hover:shadow-lg flex items-center justify-center gap-2 cursor-pointer"
               >
                 {status === "loading" ? (
                   <>

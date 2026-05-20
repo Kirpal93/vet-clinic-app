@@ -75,10 +75,10 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block bg-green-100 text-green-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wider">
+          <span className="inline-block bg-red-100 text-red-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wider">
             Our Services
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-green-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-red-900 mb-4">
             Comprehensive Pet Healthcare
           </h2>
           <p className="text-slate-500 max-w-2xl mx-auto text-lg">
@@ -91,14 +91,14 @@ export default function Services() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md hover:border-green-100 transition-all group"
+              className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md hover:border-red-100 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
-                <div className="w-14 h-14 rounded-xl bg-green-50 group-hover:bg-green-100 flex items-center justify-center text-green-700 transition-colors">
+                <div className="w-14 h-14 rounded-xl bg-red-50 group-hover:bg-red-100 flex items-center justify-center text-red-700 transition-colors">
                   {service.icon}
                 </div>
                 {service.tag && (
-                  <span className="text-xs font-semibold bg-green-700 text-white px-2.5 py-1 rounded-full">
+                  <span className="text-xs font-semibold bg-red-700 text-white px-2.5 py-1 rounded-full">
                     {service.tag}
                   </span>
                 )}
@@ -106,7 +106,7 @@ export default function Services() {
               <h3 className="text-lg font-bold text-slate-800 mb-2">{service.title}</h3>
               <p className="text-slate-500 text-sm leading-relaxed mb-4">{service.description}</p>
               <div className="flex items-center justify-between pt-4 border-t border-slate-100">
-                <span className="text-green-700 font-bold text-lg">{service.price}</span>
+                <span className="text-red-700 font-bold text-lg">{service.price}</span>
                 <span className="text-xs text-slate-400 font-medium">Per visit</span>
               </div>
             </div>
@@ -117,13 +117,13 @@ export default function Services() {
         <div className="grid sm:grid-cols-2 gap-6">
           <div className="relative h-64 rounded-2xl overflow-hidden shadow-md">
             <Image src="/images/service-1.jpg" alt="Vet examining a pet" fill className="object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 to-transparent flex items-end p-6">
+            <div className="absolute inset-0 bg-gradient-to-t from-red-900/60 to-transparent flex items-end p-6">
               <p className="text-white font-semibold text-lg">Gentle Care for Every Patient</p>
             </div>
           </div>
           <div className="relative h-64 rounded-2xl overflow-hidden shadow-md">
             <Image src="/images/service-2.jpg" alt="Modern vet clinic equipment" fill className="object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 to-transparent flex items-end p-6">
+            <div className="absolute inset-0 bg-gradient-to-t from-red-900/60 to-transparent flex items-end p-6">
               <p className="text-white font-semibold text-lg">State-of-the-Art Facilities</p>
             </div>
           </div>
